@@ -85,7 +85,7 @@ parts = [
 for i, dotcol in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
     parts.append(f'<circle cx="{PAD + i*16}" cy="{TITLEBAR_H/2}" r="5" fill="{dotcol}"/>')
 parts.append(f'<text x="{W/2}" y="{TITLEBAR_H/2 + 4}" fill="{MUTED}" font-size="12" '
-             f'text-anchor="middle">virendra@github: ~$ neofetch</text>')
+             f'text-anchor="middle">saurav@github: ~$ neofetch</text>')
 
 y = TITLEBAR_H + 34
 for i, row in enumerate(ROWS):
@@ -95,9 +95,9 @@ for i, row in enumerate(ROWS):
         continue
     if kind == "host":
         inner = (f'<text x="{KEY_X}" y="{y:.1f}" font-size="14.5" font-weight="700">'
-                 f'<tspan fill="{GREEN}">virendra</tspan><tspan fill="{MUTED}">@</tspan>'
+                 f'<tspan fill="{GREEN}">saurav</tspan><tspan fill="{MUTED}">@</tspan>'
                  f'<tspan fill="{ACCENT}">github</tspan></text>'
-                 f'<rect x="{KEY_X+142}" y="{y-4:.1f}" width="{W-PAD-(KEY_X+142)}" height="1.5" fill="url(#hostGrad)"/>')
+                 f'<rect x="{KEY_X+126}" y="{y-4:.1f}" width="{W-PAD-(KEY_X+126)}" height="1.5" fill="url(#hostGrad)"/>')
     elif kind == "sec":
         title = esc(row[1])
         inner = (f'<text x="{KEY_X}" y="{y:.1f}" fill="{SECTION}" font-size="13" font-weight="700">'
